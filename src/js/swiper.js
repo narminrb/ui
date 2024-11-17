@@ -113,10 +113,10 @@ const courses = [
   },
 ];
 
-// Select the Swiper wrapper
+
 const swiperWrapper = document.querySelector(".swiper-wrapper");
 
-// Generate star icons
+
 const generateStars = (count) => {
   let starsHTML = "";
   for (let i = 0; i < 5; i++) {
@@ -127,7 +127,6 @@ const generateStars = (count) => {
   return starsHTML;
 };
 
-// Dynamically generate course cards
 courses.forEach((course) => {
   const courseCard = document.createElement("article");
   courseCard.classList.add("card-article", "swiper-slide");
@@ -148,7 +147,7 @@ courses.forEach((course) => {
   swiperWrapper.appendChild(courseCard);
 });
 
-// Initialize Swiper
+
 const swiperCards = new Swiper(".card-content", {
   loop: true,
   spaceBetween: 32,
