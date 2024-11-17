@@ -130,6 +130,32 @@ img {
   font-size: 19px;
   font-weight: 700;
 }
+@media (max-width: 768px) {
+  #header {
+    padding: 10px 30px;
+    height: auto;
+  }
+  #header .menu {
+    display: none;
+  }
+  #header .button-part {
+    width: 100%;
+    justify-content: space-between;
+  }
+  #header .logo-image {
+    width: 80px;
+    height: auto;
+  }
+  #header .sign-up button {
+    padding: 9px 20px;
+  }
+  #header .login {
+    display: block;
+  }
+  #header .login a {
+    font-size: 16px;
+  }
+}
 
 #banner {
   display: flex;
@@ -1028,7 +1054,35 @@ img {
   font-family: "Bricolage Grotesque", sans-serif;
 }
 #featured .card-container {
-  padding-block: 5rem;
+  padding-block: 3rem;
+}
+#featured .card-container .head {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+#featured .card-container .head h2 {
+  color: white;
+  font-size: 56px;
+  font-weight: 700;
+}
+#featured .card-container .view-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+#featured .card-container .view-btn button {
+  background-color: #F0844E;
+  border: none;
+  border-radius: 30px;
+  padding: 15px 38px;
+  font-weight: 700;
+  font-size: 18px;
+  color: black;
+}
+#featured .card-container .view-btn button:hover {
+  background-color: #F6C143;
+  transition: 0.4s ease-in-out;
 }
 #featured .card-container .swiper-button-prev:after,
 #featured .card-container .swiper-button-next:after {
@@ -1140,7 +1194,6 @@ img {
   text-decoration: none;
 }
 
-/* Swiper class */
 #learn {
   display: flex;
   justify-content: center;

@@ -82,5 +82,35 @@
     }
   }
   
+  @media (max-width: 768px) {
+    padding: 10px 30px; 
+    height: auto; 
 
+    .menu {
+      display: none; 
+    }
+
+    .button-part {
+      width: 100%;
+      justify-content: space-between; 
+    }
+
+    .logo-image {
+      width: 80px; 
+      height: auto;
+    }
+
+    .sign-up {
+      button {
+        padding: 9px 20px;
+      }
+    }
+
+    .login {
+      display: block; 
+      a {
+        font-size: 16px; 
+      }
+    }
+  }
 }

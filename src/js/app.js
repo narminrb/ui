@@ -61,31 +61,32 @@ document.addEventListener('DOMContentLoaded', function () {
 
   //adimn html
 
-  function openAdminPage(element) {
-    const caseData = {
-      id: element.dataset.id,
-      title: element.querySelector("h2").innerText,
-      description: element.querySelector("p").innerText,
-      imgSrc: element.querySelector("img").src,
-    };
-    localStorage.setItem("selectedCase", JSON.stringify(caseData));
-    window.location.href = "admin.html";
-  }
+  // function openAdminPage(element) {
+  //   const caseData = {
+  //     id: element.dataset.id,
+  //     title: element.querySelector("h2").innerText,
+  //     description: element.querySelector("p").innerText,
+  //     imgSrc: element.querySelector("img").src,
+  //   };
+  //   localStorage.setItem("selectedCase", JSON.stringify(caseData));
+  //   window.location.href = "admin.html";
+  // }
 
 
-  function updateCaseFromLocalStorage() {
-    const updatedCaseData = JSON.parse(localStorage.getItem("selectedCase"));
-    if (updatedCaseData) {
-      const caseElement = document.querySelector(`.cases[data-id="${updatedCaseData.id}"]`);
-      if (caseElement) {
-        caseElement.querySelector("h2").innerText = updatedCaseData.title;
-        caseElement.querySelector("p").innerText = updatedCaseData.description;
-        caseElement.querySelector("img").src = updatedCaseData.imgSrc;
-      }
-    }
-  }
+  // function updateCaseFromLocalStorage() {
+  //   const updatedCaseData = JSON.parse(localStorage.getItem("selectedCase"));
+  //   if (updatedCaseData) {
+  //     const caseElement = document.querySelector(`.cases[data-id="${updatedCaseData.id}"]`);
+  //     if (caseElement) {
+  //       caseElement.querySelector("h2").innerText = updatedCaseData.title;
+  //       caseElement.querySelector("p").innerText = updatedCaseData.description;
+  //       caseElement.querySelector("img").src = updatedCaseData.imgSrc;
+  //     }
+  //   }
+  // }
 
-  document.addEventListener("DOMContentLoaded", updateCaseFromLocalStorage);
+  // document.addEventListener("DOMContentLoaded", updateCaseFromLocalStorage);
+
 
   const initialCasesData = [
     {

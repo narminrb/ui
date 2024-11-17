@@ -109,9 +109,39 @@
   background-color: #1E1C1B;
   font-family: $Brikolage-font;
   
+
+
   .card-container {
-    padding-block: 5rem;
+    padding-block: 3rem;
   
+    .head{
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    .head h2{
+      color: white;
+      font-size: 56px;
+      font-weight: 700;
+    }
+    .view-btn{
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    .view-btn button{
+      background-color: #F0844E;
+      border: none;
+      border-radius: 30px;
+      padding: 15px 38px;
+      font-weight: 700;
+      font-size: 18px;
+      color: black;
+    }
+    .view-btn button:hover{
+      background-color: #F6C143;
+      transition: 0.4s ease-in-out;
+    }
     .swiper-button-prev:after,
     .swiper-button-next:after {
       content: "";
@@ -222,9 +252,4 @@
 
  
  
-
-
-
-
-/* Swiper class */
 
