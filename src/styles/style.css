@@ -1029,19 +1029,6 @@ img {
   pointer-events: none;
 }
 
-:root {
-  --first-color: hsl(38, 92%, 58%);
-  --first-color-light: hsl(38, 100%, 78%);
-  --first-color-alt: hsl(32, 75%, 50%);
-  --second-color: hsl(195, 75%, 52%);
-  --dark-color: hsl(212, 40%, 12%);
-  --white-color: hsl(212, 4%, 95%);
-  --body-color: hsl(212, 42%, 15%);
-  --container-color: hsl(212, 42%, 20%);
-  --h2-font-size: 1.25rem;
-  --normal-font-size: 1rem;
-}
-
 #featured {
   display: flex;
   justify-content: center;
@@ -1124,7 +1111,7 @@ img {
   flex-wrap: wrap;
   gap: 0;
   position: relative;
-  background-color: var(--first-color-light);
+  background-color: hsl(38, 100%, 78%);
   margin-bottom: -0.75rem;
 }
 #featured .card-container .card-content .card-article .card-image img {
@@ -1139,7 +1126,7 @@ img {
 #featured .card-container .card-content .card-article .card-image .card-shadow {
   width: 200px;
   height: 200px;
-  background-color: var(--first-color-alt);
+  background-color: hsl(32, 75%, 50%);
   border-radius: 50%;
   position: absolute;
   top: 3.75rem;
@@ -1189,7 +1176,7 @@ img {
 }
 #featured .card-container .card-content .card-article .card-data .card-button {
   display: inline-block;
-  color: var(--first-color);
+  color: hsl(38, 92%, 58%);
   font-weight: 600;
   text-decoration: none;
 }
@@ -1513,64 +1500,185 @@ img {
   text-decoration: none;
 }
 
-#login {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 0;
-}
-#login .login-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 0;
+#welcome {
+  height: 350px;
   background-color: white;
-  padding: 30px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  width: 300px;
+  display: flex;
+  align-items: center;
+  font-family: "Bricolage Grotesque", sans-serif;
+  justify-content: center;
+}
+#welcome .words {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#welcome .words h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+#welcome .words h2 span {
+  opacity: 0.6;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#welcome .words h1 {
+  font-size: 64px;
+  color: #171717;
+}
+
+#logged {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0;
+  padding: 90px 0;
+  background-color: #F6F4EF;
+  font-family: "Bricolage Grotesque", sans-serif;
+}
+#logged .login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#logged .login .login_form {
+  max-width: 500px;
+  width: 100%;
+  border-radius: 24px;
+  padding: 40px 35px;
+  display: flex;
+  gap: 12px;
+  flex-direction: column;
+  box-shadow: 0px 10px 32px 0px rgba(64, 72, 82, 0.1);
+  background-color: white;
+}
+#logged .login .login_form .label {
+  font-size: 14px;
+  color: #171717;
+}
+#logged .login .login_form input {
+  width: 100%;
+  padding: 12px;
+  background-color: #F6F4EF;
+  outline: none;
+  box-sizing: border-box;
+  border: none;
+  color: #797777;
+  border-radius: 4px;
+}
+#logged .login .login_form #loginButton {
+  width: 120px;
+  background-color: #F0844E;
+  border: none;
+  color: black;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 14px;
+  border-radius: 30px;
+}
+
+#admin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: white;
+  margin: 0;
+}
+#admin .admin-container {
+  width: 90%;
+  max-width: 500px;
+  padding: 2em;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+#admin h1 {
+  font-size: 1.8em;
+  margin-bottom: 1em;
+  color: #333333;
   text-align: center;
 }
-#login .login-container h2 {
-  margin-bottom: 20px;
-  color: #333;
+#admin label {
+  font-size: 1em;
+  color: #666666;
+  margin-top: 1em;
+  display: block;
 }
-#login .login-container .input-group {
-  margin-bottom: 15px;
-  text-align: left;
-}
-#login .login-container .input-group label {
-  font-size: 14px;
-  color: #aaaaaa;
-}
-#login .login-container .input-group input {
+#admin input[type=text],
+#admin textarea,
+#admin input[type=file] {
   width: 100%;
+  padding: 12px;
+  margin-top: 0.5em;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  font-size: 1em;
+  color: #333333;
+  outline: none;
+  transition: border-color 0.3s;
+}
+#admin input[type=text]:focus,
+#admin textarea:focus {
+  border-color: #007bff;
+}
+#admin textarea {
+  resize: vertical;
+  height: 100px;
+}
+#admin input[type=file] {
   padding: 8px;
-  margin-top: 5px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-}
-#login .login-container button {
-  width: 100%;
-  padding: 10px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 4px;
+  background-color: #f4f6f8;
   cursor: pointer;
-  font-size: 16px;
+  color: #555555;
 }
-#login .login-container button:hover {
+#admin input[type=file]::-webkit-file-upload-button {
+  display: none;
+}
+#admin input[type=file]:before {
+  content: "Choose Image";
+  display: inline-block;
+  padding: 8px 16px;
+  color: #ffffff;
+  background-color: #007bff;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+#admin input[type=file]:hover:before {
   background-color: #0056b3;
 }
-#login .login-container #error-message {
-  color: red;
-  font-size: 14px;
-  margin-top: 10px;
+#admin button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 1.5em;
+  font-size: 1em;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #28a745;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+#admin button:hover {
+  background-color: #218838;
+}
+#admin button:focus {
+  outline: none;
+}
+#admin .reset-btn {
+  background-color: #dc3545;
+}
+#admin .reset-btn:hover {
+  background-color: #c82333;
 }
 
 * {
