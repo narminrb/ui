@@ -1,1 +1,40 @@
-{}
+{
+  "categories": [
+    {
+      "id": 1,
+      "title": "Business and Management",
+      "desc": "32 online courses",
+      "img": "https://outgrid.uicore.co/elearning/wp-content/uploads/sites/5/2023/06/eLearning-Courses-Icon-1.webp"
+    },
+    {
+      "id": 2,
+      "title": "Technology and IT",
+      "desc": "24 online courses",
+      "img": "https://outgrid.uicore.co/elearning/wp-content/uploads/sites/5/2023/06/eLearning-Courses-Icon-2.webp"
+    },
+    {
+      "id": 3,
+      "title": "Communication",
+      "desc": "11 online courses",
+      "img": "https://outgrid.uicore.co/elearning/wp-content/uploads/sites/5/2023/06/eLearning-Courses-Icon-3.webp"
+    },
+    {
+      "id": 4,
+      "title": "Arts and Design",
+      "desc": "56 online courses",
+      "img": "https://outgrid.uicore.co/elearning/wp-content/uploads/sites/5/2023/06/eLearning-Courses-Icon-4.webp"
+    },
+    {
+      "id": 5,
+      "title": "Marketing",
+      "desc": "20 online courses",
+      "img": "https://outgrid.uicore.co/elearning/wp-content/uploads/sites/5/2023/06/eLearning-Courses-Icon-5.webp"
+    },
+    {
+      "id": 6,
+      "title": "Personal Development",
+      "desc": "17 online courses",
+      "img": "https://outgrid.uicore.co/elearning/wp-content/uploads/sites/5/2023/06/eLearning-Courses-Icon-6.webp"
+    }
+  ]
+}

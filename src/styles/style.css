@@ -808,7 +808,6 @@ img {
   height: auto;
   text-align: center;
   position: relative;
-  box-sizing: content-box;
 }
 #categories .categories-card .categories-image .categories-img-box, #categories .categories-card .categories-image6 .categories-img-box, #categories .categories-card .categories-image5 .categories-img-box, #categories .categories-card .categories-image4 .categories-img-box, #categories .categories-card .categories-image3 .categories-img-box, #categories .categories-card .categories-image2 .categories-img-box {
   position: relative;
