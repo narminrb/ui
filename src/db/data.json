@@ -1,40 +1,26 @@
-{
-  "categories": [
-    {
-      "id": 1,
-      "title": "Business and Management",
-      "desc": "32 online courses",
-      "img": "https://outgrid.uicore.co/elearning/wp-content/uploads/sites/5/2023/06/eLearning-Courses-Icon-1.webp"
-    },
-    {
-      "id": 2,
-      "title": "Technology and IT",
-      "desc": "24 online courses",
-      "img": "https://outgrid.uicore.co/elearning/wp-content/uploads/sites/5/2023/06/eLearning-Courses-Icon-2.webp"
-    },
-    {
-      "id": 3,
-      "title": "Communication",
-      "desc": "11 online courses",
-      "img": "https://outgrid.uicore.co/elearning/wp-content/uploads/sites/5/2023/06/eLearning-Courses-Icon-3.webp"
-    },
-    {
-      "id": 4,
-      "title": "Arts and Design",
-      "desc": "56 online courses",
-      "img": "https://outgrid.uicore.co/elearning/wp-content/uploads/sites/5/2023/06/eLearning-Courses-Icon-4.webp"
-    },
-    {
-      "id": 5,
-      "title": "Marketing",
-      "desc": "20 online courses",
-      "img": "https://outgrid.uicore.co/elearning/wp-content/uploads/sites/5/2023/06/eLearning-Courses-Icon-5.webp"
-    },
-    {
-      "id": 6,
-      "title": "Personal Development",
-      "desc": "17 online courses",
-      "img": "https://outgrid.uicore.co/elearning/wp-content/uploads/sites/5/2023/06/eLearning-Courses-Icon-6.webp"
-    }
-  ]
-}
+[
+  {
+    "id": 1,
+    "imgSrc": "https://outgrid.uicore.co/elearning/wp-content/uploads/sites/5/2023/06/eLearning-Why-Icon-5.webp",
+    "title": "Flexible time",
+    "description": "Online education allows teachers and students to set their own pace of learning, and there is added flexibility in setting a schedule that fits."
+  },
+  {
+    "id": 2,
+    "imgSrc": "https://outgrid.uicore.co/elearning/wp-content/uploads/sites/5/2023/06/eLearning-Why-Icon-2.webp",
+    "title": "Certificate",
+    "description": "Teachers and students to set their own pace of learning, and there is added flexibility in setting a schedule that fits everyone’s agenda."
+  },
+  {
+    "id": 3,
+    "imgSrc": "https://outgrid.uicore.co/elearning/wp-content/uploads/sites/5/2023/06/eLearning-Why-Icon-3.webp",
+    "title": "Class program options",
+    "description": "Allows teachers and students to set their own pace of learning, and there is added flexibility in setting a schedule that fits everyone’s agenda."
+  },
+  {
+    "id": 4,
+    "imgSrc": "https://outgrid.uicore.co/elearning/wp-content/uploads/sites/5/2023/06/eLearning-Why-Icon-4.webp",
+    "title": "Access anywhere",
+    "description": "Online education allows teachers and students to set their own pace of learning, and there is added flexibility in setting a schedule."
+  }
+]

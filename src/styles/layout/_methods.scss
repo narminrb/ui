@@ -70,16 +70,16 @@
         }
       }
       .method-img2 {
-        @extend .method-img; // Inherit styles from .method-img
+        @extend .method-img; 
         background-image: url("https://outgrid.uicore.co/elearning/wp-content/uploads/sites/5/2023/06/eLearning-Why-BG-2.webp");
       }
       
       .method-img3 {
-        @extend .method-img; // Inherit styles from .method-img
+        @extend .method-img; 
         background-image: url("https://outgrid.uicore.co/elearning/wp-content/uploads/sites/5/2023/06/eLearning-Why-BG-3.webp");
       }
       
-      // Add more extensions as needed
+   
       .method-img4 {
         @extend .method-img;
         background-image: url("https://outgrid.uicore.co/elearning/wp-content/uploads/sites/5/2023/06/eLearning-Why-BG-4.webp");
@@ -98,10 +98,10 @@
   }
   @media (max-width: 768px) {
     .right-method {
-      @include Flexible(center, center, row, wrap, 0); // Force items in a single row
-      flex-wrap: wrap; // Prevent wrapping on smaller screens
-      overflow-x: auto; // Enable horizontal scrolling if needed
-      gap: 10px; // Space between items if desired
+      @include Flexible(center, center, row, wrap, 0); 
+      flex-wrap: wrap;
+      overflow-x: auto; 
+      gap: 10px; 
       margin: 0;
       padding: 0;
       .cases {
